@@ -1,0 +1,131 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+:root {
+  --dark-theme: #202124;
+  --dark-theme2: #313235;
+  --dark-theme3: #424346;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 55%;
+  }
+}
+
+*, ::before, ::after {
+  box-sizing: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-size: 60%;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--dark-theme);
+  color: white;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  font-size: 3em;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--dark-theme2);
+  transition: transform 0.4s ease-in-out 0s;
+}
+
+#navbar > a {
+  text-decoration: none;
+  color: white;
+  margin-top: 1.5%;
+  margin-bottom: 1.5%;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+#navbar > a:hover {
+  transform: scale(1.2);
+}
+
+#a {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 100px;
+}
+
+#b {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 700px;
+}
+
+#welcome-section {
+  margin-top: 20%;
+  margin-bottom: 20%;
+  padding: 10px;
+  background-color: var(--dark-theme3);
+  text-align: center;
+}
+
+#welcome-section > h1 {
+  font-size: 3.5em;
+}
+
+#welcome-section > p {
+  font-size: 2.7em;
+}
+
+#projects {
+  margin-top: 30%;
+  margin-bottom: 20%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr));
+  grid-gap: 5rem;
+  text-align: justify;
+}
+
+.project-tile > a {
+  font-size: 4em;
+  color: white;
+  text-decoration: none;
+  text-align: justify;
+  background-color: var(--dark-theme2);
+  padding: 2rem;
+}
+
+#contact {
+  margin-top: 30%;
+  margin-bottom: 20%;
+}
+
+#contact > a {
+  font-size: 4em;
+  color: white;
+  text-decoration: none;
+}
+
+a {
+  transition: transform 0.4s ease-in-out 0s;
+}
+
+#contact > a:hover {
+  transform: scale(1.2);
+}
+
+#github-logo {
+  background: transparent;
+  width: 50px;
+  height: 50px;
+  float: left;
+  padding: 5px;
+  margin-right: 10px;
+}
